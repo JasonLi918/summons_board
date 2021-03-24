@@ -69,6 +69,76 @@ export default function handler(req, res) {
         'jp_name':'崩律帝獣・フィアドラーク',
         'img':'https://imgur.com/sJrL10B.jpg',
         'type':'獸帝'
+      },
+      {
+        'name':'Armed_Girl_Fire',
+        'tc_name':'火裝姬',
+        'jp_name':'聖遺解放フラマ',
+        'img':'https://imgur.com/1aLy246.jpg',
+        'type':'裝姬'
+      },
+      {
+        'name':'Armed_Girl_Water',
+        'tc_name':'水裝姬',
+        'jp_name':'聖遺解放オラージュ',
+        'img':'https://imgur.com/vRW5g9H.jpg',
+        'type':'裝姬'
+      },
+      {
+        'name':'Armed_Girl_Wood',
+        'tc_name':'木裝姬',
+        'jp_name':'聖遺解放シエル',
+        'img':'https://imgur.com/1uOHaTv.jpg',
+        'type':'裝姬'
+      },
+      {
+        'name':'Armed_Girl_Light',
+        'tc_name':'光裝姬',
+        'jp_name':'聖遺解放エクレール',
+        'img':'https://imgur.com/ytIMQ1O.jpg',
+        'type':'裝姬'
+      },
+      {
+        'name':'Armed_Girl_Dark',
+        'tc_name':'暗裝姬',
+        'jp_name':'聖遺解放フォンセ',
+        'img':'https://imgur.com/NJOFmRA.jpg',
+        'type':'裝姬'
+      },
+      {
+        'name':'Ancient_Dragon_Fire',
+        'tc_name':'火古龍',
+        'jp_name':'真焔古龍・フレイバルカン',
+        'img':'https://imgur.com/1dbPIt3.jpg',
+        'type':'古龍'
+      },
+      {
+        'name':'Ancient_Dragon_Water',
+        'tc_name':'水古龍',
+        'jp_name':'真凍古龍・エスベル',
+        'img':'https://imgur.com/CqiklCo.jpg',
+        'type':'古龍'
+      },
+      {
+        'name':'Ancient_Dragon_Wood',
+        'tc_name':'木古龍',
+        'jp_name':'真疾古龍・ウィンフィールド',
+        'img':'https://imgur.com/raYD0aH.jpg',
+        'type':'古龍'
+      },
+      {
+        'name':'Ancient_Dragon_Light',
+        'tc_name':'光古龍',
+        'jp_name':'真煌古龍・パルマスホーリー',
+        'img':'https://imgur.com/MLdMLlT.jpg',
+        'type':'古龍'
+      },
+      {
+        'name':'Ancient_Dragon_Dark',
+        'tc_name':'暗古龍',
+        'jp_name':'真影古龍・ダークネイヴァー',
+        'img':'https://imgur.com/u0RtrD9.jpg',
+        'type':'古龍'
       }
   	])
 }
