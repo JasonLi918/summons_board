@@ -27,7 +27,10 @@ class HomePage extends React.Component{
 
 	render(){
 		return(
-			<Menu title='Testing' data={selecttype('1',this.state.data)}/>
+			<div>
+				<Menu title='獸王' data={selecttype('獸王',this.state.data)}/>
+				<Menu title='獸帝' data={selecttype('獸帝',this.state.data)}/>
+			</div>
 		)
 	}
 
@@ -45,7 +48,7 @@ class Menu extends React.Component{
 		let data = this.props.data;
 		return(
 			<div>
-				Title:{this.props.title}
+				限定系列:{this.props.title}
 				<table>
 					<tbody>
 						<tr>
@@ -53,7 +56,11 @@ class Menu extends React.Component{
 								return (
 									<td key={value.name}>
 										<Link href={'/board_info/'+value.name}>
-											<a>{value.name}</a>
+											<a>
+												<img src={value.img}/> <br/>
+												簡稱: {value.tc_name} <br/>
+												日文名稱: {value.jp_name}
+											</a>
 										</Link>
 									</td>)
 							})}
@@ -61,7 +68,16 @@ class Menu extends React.Component{
 					</tbody>
 				</table>
 				<style jsx>{`
+					table{
+						width:100%;
+					}
+
+					tr{
+						text-align:center;
+					}
+
 			        td{
+			        	width:20%;
 			        	border:1px solid #ffffff;
 			        	padding:5px;
 			        }
@@ -80,13 +96,11 @@ class Menu extends React.Component{
 
 function selecttype(target,data){
 	let result = [];
-
 	data.forEach((element,index)=>{
 		if(element.type == target){
 			result.push(element)
 		}
 	})
-	console.log(result);
 	return result;
 }
 
