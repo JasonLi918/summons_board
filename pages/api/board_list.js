@@ -139,6 +139,34 @@ export default function handler(req, res) {
         'jp_name':'真影古龍・ダークネイヴァー',
         'img':'https://imgur.com/u0RtrD9.jpg',
         'type':'古龍'
+      },
+      {
+        'name':'Creation_God_Fire',
+        'tc_name':'火創神',
+        'jp_name':'狂創神イヴェルガンド',
+        'img':'https://i.imgur.com/72MygNc.jpg',
+        'type':'三創神'
+      },
+      {
+        'name':'Creation_God_Water',
+        'tc_name':'水創神',
+        'jp_name':'星創神イフ',
+        'img':'https://i.imgur.com/YNDwqUU.jpg',
+        'type':'三創神'
+      },
+      {
+        'name':'Creation_God_Wood',
+        'tc_name':'木創神',
+        'jp_name':'魔創神ロード・メイガス',
+        'img':'https://i.imgur.com/8vrrpVq.jpg',
+        'type':'三創神'
+      },
+      {
+        'name':'Beast_Controller_Fire',
+        'tc_name':'火獸操',
+        'jp_name':'炎獣操士ネス',
+        'img':'https://i.imgur.com/y82EZxH.jpg',
+        'type':'獸操士'
       }
   	])
 }

@@ -32,6 +32,8 @@ class HomePage extends React.Component{
 				<Menu title='獸帝' data={selecttype('獸帝',this.state.data)}/>
 				<Menu title='裝姬' data={selecttype('裝姬',this.state.data)}/>
 				<Menu title='古龍' data={selecttype('古龍',this.state.data)}/>
+				<Menu title='三創神' data={selecttype('三創神',this.state.data)}/>
+				<Menu title='獸操士' data={selecttype('獸操士',this.state.data)}/>
 			</div>
 		)
 	}
