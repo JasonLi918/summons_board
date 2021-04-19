@@ -1,9 +1,18 @@
 export default function handler(req, res) {
   res.status(200).json(
   		{
-  			'full_name':'炎龍王',
-  			'short_name':'炎鳳竜王・レプティアス',
-  			'image_A':'https://i.imgur.com/6bBsDRn.jpg'
+  			'Number':'',
+  			'Image':'https://i.imgur.com/6bBsDRn.jpg',
+  			'Name_tc':'炎龍王',
+  			'Name_jp':'炎鳳竜王・レプティアス',
+  			'Atk_before':'',
+  			'Atk_after':'',
+  			'Soul':'',
+  			'Type':'',
+  			'Characteristic_Before':'',
+  			'Characteristic_After':'',
+  			'Tp_Transform':'',
+  			'Tp_Characteristic':''
   		}
   	)
 }

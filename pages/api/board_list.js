@@ -167,6 +167,69 @@ export default function handler(req, res) {
         'jp_name':'炎獣操士ネス',
         'img':'https://i.imgur.com/y82EZxH.jpg',
         'type':'獸操士'
+      },
+      {
+        'name':'Beast_Controller_Water',
+        'tc_name':'水獸操',
+        'jp_name':'氷獣操士ザルバ',
+        'img':'https://i.imgur.com/xsvUXtf.jpg',
+        'type':'獸操士'
+      },
+      {
+        'name':'Beast_Controller_Wood',
+        'tc_name':'木獸操',
+        'jp_name':'嵐獣操士ラナ',
+        'img':'https://i.imgur.com/lageRfA.jpg',
+        'type':'獸操士'
+      },
+      {
+        'name':'Beast_Controller_Light',
+        'tc_name':'光獸操',
+        'jp_name':'光獣操士セリエ',
+        'img':'https://i.imgur.com/bUIYQbR.jpg',
+        'type':'獸操士'
+      },
+      {
+        'name':'Beast_Controller_Dark',
+        'tc_name':'暗獸操',
+        'jp_name':'闇獣操士カティ',
+        'img':'https://i.imgur.com/nNkG6WW.jpg',
+        'type':'獸操士'
+      },
+      {
+        'name':'Mechanical_Girl_Fire',
+        'tc_name':'火機娘',
+        'jp_name':'02式戦克:メイシン',
+        'img':'https://i.imgur.com/fLAGnqg.jpg',
+        'type':'機娘'
+      },
+      {
+        'name':'Mechanical_Girl_Water',
+        'tc_name':'水機娘',
+        'jp_name':'61式戦克乙:シャオシン',
+        'img':'https://i.imgur.com/uu5eAqC.jpg',
+        'type':'機娘'
+      },
+      {
+        'name':'Mechanical_Girl_Wood',
+        'tc_name':'木機娘',
+        'jp_name':'SO135:V2-アレスタ',
+        'img':'https://i.imgur.com/et4AoMR.jpg',
+        'type':'機娘'
+      },
+      {
+        'name':'Mechanical_Girl_Light',
+        'tc_name':'光機娘',
+        'jp_name':'SO928:V2-サイリスタ',
+        'img':'https://i.imgur.com/ltM0rF3.jpg',
+        'type':'機娘'
+      },
+      {
+        'name':'Mechanical_Girl_Dark',
+        'tc_name':'暗機娘',
+        'jp_name':'SO629c(バリスタ)',
+        'img':'https://i.imgur.com/DDSr8ZT.jpg',
+        'type':'機娘'
       }
   	])
 }

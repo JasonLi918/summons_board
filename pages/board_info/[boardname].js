@@ -47,9 +47,40 @@ class DetailInfo extends React.Component{
 	render(){
 		return(
 			<div>
-				{this.state.data.full_name}<br/>
-				{this.state.data.short_name}<br/>
-				{this.state.data.image_A}<br/>
+				<table>
+					<tbody>
+						<tr>
+							<td colspan="2">Title</td>
+						</tr>
+						<tr>
+							<td>Number Text</td>
+							<td>Number</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<img src={this.state.data.Image}/>
+							</td>
+						</tr>
+						<tr>
+							<td>Tc Name</td>
+							<td>{this.state.data.Name_tc}</td>
+						</tr>
+						<tr>
+							<td>Jp Name</td>
+							<td>{this.state.data.Name_jp}</td>
+						</tr>
+					</tbody>
+				</table>
+				<style jsx>{`
+				table{
+					margin-bottom:20px;
+				}
+
+				td{
+					border:1px solid #ffffff
+				}
+				`}
+				</style>
 			</div>
 		)
 	}
