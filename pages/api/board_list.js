@@ -237,6 +237,34 @@ export default function handler(req, res) {
         'jp_name':'暴焔竜神獣ラルグ',
         'img':'https://imgur.com/HOqlz4d.jpg',
         'type':'封龍士'
+      },
+      {
+        'name':'Seal_Dragon_Water',
+        'tc_name':'水封龍',
+        'jp_name':'絶凍竜神獣シュスト',
+        'img':'https://imgur.com/GMtJeN2.jpg',
+        'type':'封龍士'
+      },
+      {
+        'name':'Seal_Dragon_Wood',
+        'tc_name':'木封龍',
+        'jp_name':'深碧竜神獣フリネーダ',
+        'img':'',
+        'type':'封龍士'
+      },
+      {
+        'name':'Seal_Dragon_Light',
+        'tc_name':'光封龍',
+        'jp_name':'閃雷竜神獣ミレシア',
+        'img':'',
+        'type':'封龍士'
+      },
+      {
+        'name':'Seal_Dragon_Dark',
+        'tc_name':'暗封龍',
+        'jp_name':'冥夜竜神獣クロユリ',
+        'img':'',
+        'type':'封龍士'
       }
   	])
 }
