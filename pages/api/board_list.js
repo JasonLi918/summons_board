@@ -230,6 +230,13 @@ export default function handler(req, res) {
         'jp_name':'SO629c(バリスタ)',
         'img':'https://i.imgur.com/DDSr8ZT.jpg',
         'type':'機娘'
+      },
+      {
+        'name':'Seal_Dragon_Fire',
+        'tc_name':'火封龍',
+        'jp_name':'暴焔竜神獣ラルグ',
+        'img':'https://imgur.com/HOqlz4d.jpg',
+        'type':'封龍士'
       }
   	])
 }

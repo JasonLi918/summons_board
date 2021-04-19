@@ -53,8 +53,8 @@ class DetailInfo extends React.Component{
 							<td colspan="2">Title</td>
 						</tr>
 						<tr>
-							<td>Number Text</td>
-							<td>Number</td>
+							<td>棋寵編號</td>
+							<td>{this.state.data.Number}</td>
 						</tr>
 						<tr>
 							<td colspan="2">
@@ -62,22 +62,29 @@ class DetailInfo extends React.Component{
 							</td>
 						</tr>
 						<tr>
-							<td>Tc Name</td>
+							<td>中文名稱</td>
 							<td>{this.state.data.Name_tc}</td>
 						</tr>
 						<tr>
-							<td>Jp Name</td>
+							<td>日文名稱</td>
 							<td>{this.state.data.Name_jp}</td>
 						</tr>
 					</tbody>
 				</table>
+				<Link href='/'>
+					<a>
+						<button>Back to Home Page</button>
+					</a>
+				</Link>
 				<style jsx>{`
 				table{
 					margin-bottom:20px;
 				}
 
 				td{
-					border:1px solid #ffffff
+					border:1px solid #ffffff;
+					text-align:center;
+					padding:5px;
 				}
 				`}
 				</style>

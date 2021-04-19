@@ -1,7 +1,7 @@
 export default function handler(req, res) {
   res.status(200).json(
   		{
-  			'Number':'',
+  			'Number':'1844',
   			'Image':'https://i.imgur.com/6bBsDRn.jpg',
   			'Name_tc':'炎龍王',
   			'Name_jp':'炎鳳竜王・レプティアス',
