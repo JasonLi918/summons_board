@@ -440,6 +440,41 @@ export default function handler(req, res) {
         'jp_name':'幽命天魔エウノミア',
         'img':'https://i.imgur.com/dzCkg60.jpg',
         'type':'天魔'
+      },
+      {
+        'name':'Heaven_General_Fire',
+        'tc_name':'火天將',
+        'jp_name':'火月天将『朱雀』火雅裏',
+        'img':'https://imgur.com/9o5Mwz2.jpg',
+        'type':'天將'
+      },
+      {
+        'name':'Heaven_General_Water',
+        'tc_name':'水天將',
+        'jp_name':'水月天将『天后』竜胆',
+        'img':'https://imgur.com/zNMO9Us.jpg',
+        'type':'天將'
+      },
+      {
+        'name':'Heaven_General_Wood',
+        'tc_name':'木天將',
+        'jp_name':'地月天将『六合』翌檜',
+        'img':'https://imgur.com/sUab01q.jpg',
+        'type':'天將'
+      },
+      {
+        'name':'Heaven_General_Light',
+        'tc_name':'光天將',
+        'jp_name':'雷月天将『天空』雷童',
+        'img':'https://imgur.com/UJAwLJ9.jpg',
+        'type':'天將'
+      },
+      {
+        'name':'Heaven_General_Dark',
+        'tc_name':'暗天將',
+        'jp_name':'陰月天将『太裳』綾目',
+        'img':'https://imgur.com/8unQEKB.jpg',
+        'type':'天將'
       }
   	])
 }

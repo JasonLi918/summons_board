@@ -41,6 +41,7 @@ class HomePage extends React.Component{
 				<Menu title='精靈王' data={selecttype('精靈王',this.state.data)}/>
 				<Menu title='星獸姬' data={selecttype('星獸姬',this.state.data)}/>
 				<Menu title='天魔' data={selecttype('天魔',this.state.data)}/>
+				<Menu title='天將' data={selecttype('天將',this.state.data)}/>
 				<style jsx>{`
 					div{
 						width:80%;
