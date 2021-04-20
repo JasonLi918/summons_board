@@ -249,22 +249,197 @@ export default function handler(req, res) {
         'name':'Seal_Dragon_Wood',
         'tc_name':'木封龍',
         'jp_name':'深碧竜神獣フリネーダ',
-        'img':'',
+        'img':'https://imgur.com/JyqEVAC.jpg',
         'type':'封龍士'
       },
       {
         'name':'Seal_Dragon_Light',
         'tc_name':'光封龍',
         'jp_name':'閃雷竜神獣ミレシア',
-        'img':'',
+        'img':'https://imgur.com/R7ZKJU8.jpg',
         'type':'封龍士'
       },
       {
         'name':'Seal_Dragon_Dark',
         'tc_name':'暗封龍',
         'jp_name':'冥夜竜神獣クロユリ',
-        'img':'',
+        'img':'https://imgur.com/9vFxtHr.jpg',
         'type':'封龍士'
+      },
+      {
+        'name':'Sky_Astral_Fire',
+        'tc_name':'火天星',
+        'jp_name':'煉天星神獣マルティウス',
+        'img':'https://imgur.com/4umTDZ6.jpg',
+        'type':'天星'
+      },
+      {
+        'name':'Sky_Astral_Water',
+        'tc_name':'水天星',
+        'jp_name':'蒼天星神獣メルクーア',
+        'img':'https://imgur.com/kKugnEa.jpg',
+        'type':'天星'
+      },
+      {
+        'name':'Sky_Astral_Wood',
+        'tc_name':'木天星',
+        'jp_name':'獅天星神獣ジョーヴェ',
+        'img':'https://imgur.com/k3lHqUh.jpg',
+        'type':'天星'
+      },
+      {
+        'name':'Sky_Astral_Light',
+        'tc_name':'光天星',
+        'jp_name':'虹天星神獣ヴィニエーラ',
+        'img':'https://imgur.com/FqhOHIl.jpg',
+        'type':'天星'
+      },
+      {
+        'name':'Sky_Astral_Dark',
+        'tc_name':'暗天星',
+        'jp_name':'無天星神獣サトゥルヌス',
+        'img':'https://imgur.com/P58hf3e.jpg',
+        'type':'天星'
+      },
+      {
+        'name':'Maki_Fire',
+        'tc_name':'火真姬',
+        'jp_name':'聖遺解放ナティエ',
+        'img':'https://i.imgur.com/zbxGgTn.jpg',
+        'type':'真姬'
+      },
+      {
+        'name':'Maki_Water',
+        'tc_name':'水真姬',
+        'jp_name':'聖遺解放セレッサ',
+        'img':'https://i.imgur.com/oiomKai.jpg',
+        'type':'真姬'
+      },
+      {
+        'name':'Maki_Wood',
+        'tc_name':'木真姬',
+        'jp_name':'聖遺解放シア',
+        'img':'https://i.imgur.com/f1vg3XA.jpg',
+        'type':'真姬'
+      },
+      {
+        'name':'Maki_Light',
+        'tc_name':'光真姬',
+        'jp_name':'聖遺解放アルシェ',
+        'img':'https://i.imgur.com/CITz0r9.jpg',
+        'type':'真姬'
+      },
+      {
+        'name':'Maki_Dark',
+        'tc_name':'暗真姬',
+        'jp_name':'聖遺解放ノア',
+        'img':'https://i.imgur.com/oh1cyW4.jpg',
+        'type':'真姬'
+      },
+      {
+        'name':'Elf_King_Fire',
+        'tc_name':'火精靈王',
+        'jp_name':'炎精霊王グローセ',
+        'img':'https://i.imgur.com/7n2yIIT.jpg',
+        'type':'精靈王'
+      },
+      {
+        'name':'Elf_King_Water',
+        'tc_name':'水精靈王',
+        'jp_name':'水精霊王ゼイリオン',
+        'img':'https://i.imgur.com/qCgukee.jpg',
+        'type':'精靈王'
+      },
+      {
+        'name':'Elf_King_Wood',
+        'tc_name':'木精靈王',
+        'jp_name':'木精霊王エダード',
+        'img':'https://i.imgur.com/nSP9lyh.jpg',
+        'type':'精靈王'
+      },
+      {
+        'name':'Elf_King_Light',
+        'tc_name':'光精靈王',
+        'jp_name':'光精霊王ユーダス',
+        'img':'https://i.imgur.com/4aRVn17.jpg',
+        'type':'精靈王'
+      },
+      {
+        'name':'Elf_King_Dark',
+        'tc_name':'暗精靈王',
+        'jp_name':'闇精霊王ガイエス',
+        'img':'https://i.imgur.com/EOp12nz.jpg',
+        'type':'精靈王'
+      },
+      {
+        'name':'Star_Beast_Girl_Fire',
+        'tc_name':'火星獸姬',
+        'jp_name':'律星獣姫ティセラ',
+        'img':'https://i.imgur.com/jKcuuY9.jpg',
+        'type':'星獸姬'
+      },
+      {
+        'name':'Star_Beast_Girl_Water',
+        'tc_name':'水星獸姬',
+        'jp_name':'想星獣姫プリエ',
+        'img':'https://i.imgur.com/QbaWuDV.jpg',
+        'type':'星獸姬'
+      },
+      {
+        'name':'Star_Beast_Girl_Wood',
+        'tc_name':'木星獸姬',
+        'jp_name':'轟星獣姫ベルテ',
+        'img':'https://i.imgur.com/00UVobJ.jpg',
+        'type':'星獸姬'
+      },
+      {
+        'name':'Star_Beast_Girl_Light',
+        'tc_name':'光星獸姬',
+        'jp_name':'照星獣姫ロゼリ',
+        'img':'https://imgur.com/ANXvVIO.jpg',
+        'type':'星獸姬'
+      },
+      {
+        'name':'Star_Beast_Girl_Dark',
+        'tc_name':'暗星獸姬',
+        'jp_name':'幻星獣姫ルゼリッタ',
+        'img':'https://i.imgur.com/DZJ33Bk.jpg',
+        'type':'星獸姬'
+      },
+      {
+        'name':'Heaven_Demon_Fire',
+        'tc_name':'火天魔',
+        'jp_name':'紅貌天魔ベスタ',
+        'img':'https://i.imgur.com/xAPqeUU.jpg',
+        'type':'天魔'
+      },
+      {
+        'name':'Heaven_Demon_Water',
+        'tc_name':'水天魔',
+        'jp_name':'透映天魔マリア',
+        'img':'https://i.imgur.com/wIxhutI.jpg',
+        'type':'天魔'
+      },
+      {
+        'name':'Heaven_Demon_Wood',
+        'tc_name':'木天魔',
+        'jp_name':'再臨天魔エオス',
+        'img':'https://i.imgur.com/ZnoZX5C.jpg',
+        'type':'天魔'
+      },
+      {
+        'name':'Heaven_Demon_Light',
+        'tc_name':'光天魔',
+        'jp_name':'双叡天魔ニサ',
+        'img':'https://i.imgur.com/IebJE9i.jpg',
+        'type':'天魔'
+      },
+      {
+        'name':'Heaven_Demon_Dark',
+        'tc_name':'暗天魔',
+        'jp_name':'幽命天魔エウノミア',
+        'img':'https://i.imgur.com/dzCkg60.jpg',
+        'type':'天魔'
       }
   	])
 }
