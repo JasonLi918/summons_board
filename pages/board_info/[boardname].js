@@ -113,14 +113,18 @@ class DetailInfo extends React.Component{
 						</tr>
 						<tr>
 							<td>特性[覺醒前]</td>
-							<td></td>
+							<td>
+								<CharacteristicImg characteristicinfo={this.state.data.Characteristic_Before}/>
+							</td>
 							<td>
 								<ListText listinfo={this.state.data.Characteristic_Before}/>
 							</td>
 						</tr>
 						<tr>
 							<td>特性[覺醒後]</td>
-							<td></td>
+							<td>
+								<CharacteristicImg characteristicinfo={this.state.data.Characteristic_After}/>
+							</td>
 							<td>
 								<ListText listinfo={this.state.data.Characteristic_After}/>
 							</td>
@@ -208,6 +212,63 @@ function ListText(props){
 
 	return(
 		<div>{textlist}</div>
+	)
+}
+
+function CharacteristicImg(props){
+	let characteristicinfo = (props.characteristicinfo);
+	let characteristiclist = [];
+	
+	if(characteristicinfo != undefined){
+		characteristicinfo.forEach((element)=>{
+			switch(element){
+				case "全體化":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/all.png");
+					break;
+				case "飛行":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/fly.png");
+					break;
+				case "貫通 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/kantsu.png");
+					break;
+				case "貫通 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/kantsu2.png");
+					break;
+				case "貫通 Lv3":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/kantsu3.png");
+					break;
+				case "貫通LV2&Boss殺手":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/kantsugiant.png");
+					break;
+				case "技能盾 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/barrier1.png");
+					break;
+				case "技能盾 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/barrier_2.png");
+					break;
+				case "技能盾 Lv1&追加攻擊":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/barrier2.png");
+					break;
+				case "技能盾 Lv2&追加攻擊":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/barrier2_2.png");
+					break;
+				case "物理盾 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/barrier_physical1.png");
+					break;
+				case "對空攻擊 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/flyingkiller.png");
+			}
+		})
+	}
+
+	let listItems = characteristiclist.map((element,index)=>
+		<div key={index+"characteristicimg"} className="characteristiclistimg">
+			<img src={element}/>
+		</div>
+	);
+
+	return(
+		<div>{listItems}</div>
 	)
 }
 

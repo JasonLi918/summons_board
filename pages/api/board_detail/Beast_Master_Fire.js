@@ -11,7 +11,7 @@ export default function handler(req, res) {
   			'Soul':'4格',
   			'Type':['攻擊type','強襲type'],
   			'Characteristic_Before':['飛行','全體化'],
-  			'Characteristic_After':['飛行','全體化','技能盾'],
+  			'Characteristic_After':['飛行','全體化','技能盾 Lv1'],
   			'Tp_Transform':'25',
   			'Tp_Characteristic':'弱點賦予'
   		}

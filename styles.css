@@ -3,11 +3,11 @@ body{
 	color:#ffffff;
 }
 
-.typeimg{
+.typeimg , .characteristiclistimg{
 	display:inline;
 }
 
-.typeimg img{
+.typeimg img , .characteristiclistimg img{
 	width:45px;
 	padding:2.5px;
 }
