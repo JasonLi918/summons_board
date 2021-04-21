@@ -2,3 +2,12 @@ body{
 	background-color:black;
 	color:#ffffff;
 }
+
+.typeimg{
+	display:inline;
+}
+
+.typeimg img{
+	width:45px;
+	padding:2.5px;
+}

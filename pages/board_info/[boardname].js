@@ -50,14 +50,14 @@ class DetailInfo extends React.Component{
 				<table>
 					<tbody>
 						<tr>
-							<td colspan="2">Title</td>
+							<td colSpan="2">Title</td>
 						</tr>
 						<tr>
 							<td>棋寵編號</td>
 							<td>{this.state.data.Number}</td>
 						</tr>
 						<tr>
-							<td colspan="2">
+							<td colSpan="2">
 								<img src={this.state.data.Image}/>
 							</td>
 						</tr>
@@ -71,6 +71,63 @@ class DetailInfo extends React.Component{
 						</tr>
 					</tbody>
 				</table>
+
+				<table>
+					<tbody>
+						<tr>
+							<td colSpan="2">＊ LV . MAX ＊</td>
+						</tr>
+						<tr>
+							<td>HP</td>
+							<td>{this.state.data.hp}</td>
+						</tr>
+						<tr>
+							<td>攻擊力(覺醒前)</td>
+							<td>{this.state.data.Atk_before}</td>
+						</tr>
+						<tr>
+							<td>攻擊力(覺醒後)</td>
+							<td>{this.state.data.Atk_after}</td>
+						</tr>
+						<tr>
+							<td>最大魂格數量</td>
+							<td>{this.state.data.Soul}</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table>
+					<tbody>
+						<tr>
+							<td>Type</td>
+							<td>
+								<TypeList typelist={this.state.data.Type}/>
+							</td>
+							<td>
+								{this.state.data.Type}
+							</td>
+						</tr>
+						<tr>
+							<td>覺醒玉消耗</td>
+							<td colSpan="2">{this.state.data.Tp_Transform}</td>
+						</tr>
+						<tr>
+							<td>特性[覺醒前]</td>
+							<td></td>
+							<td>{this.state.data.Characteristic_Before}</td>
+						</tr>
+						<tr>
+							<td>特性[覺醒後]</td>
+							<td></td>
+							<td>{this.state.data.Characteristic_After}</td>
+						</tr>
+						<tr>
+							<td>覺醒特性</td>
+							<td colSpan="2">{this.state.data.Tp_Characteristic}</td>
+						</tr>
+					</tbody>
+				</table>
+
 				<Link href='/'>
 					<a>
 						<button>Back to Home Page</button>
@@ -86,12 +143,64 @@ class DetailInfo extends React.Component{
 					text-align:center;
 					padding:5px;
 				}
+
+				.typeimg{
+					display:inline;
+				}
+
+				.typeimg img{
+					width:90px;
+				}
+
 				`}
 				</style>
 			</div>
 		)
 	}
 
+}
+
+function TypeList(props){
+	let typeinfo = (props.typelist);
+	let typelist = [];
+	
+	if(typeinfo != undefined){
+		typeinfo.forEach((element)=>{
+			if(element == "攻擊type"){
+				typelist.push("http://sb.aaa5207577.net/wp-content/uploads/2015/10/icon_offensive.png");
+			}else if(element == "平衡type"){
+				typelist.push("http://sb.aaa5207577.net/wp-content/uploads/2015/10/icon_balance.png");
+			}else if(element == "HPtype"){
+				typelist.push("http://sb.aaa5207577.net/wp-content/uploads/2015/10/icon_hitpoint.png");
+			}
+
+			if(element == "強襲type"){
+				typelist.push("http://sb.aaa5207577.net/wp-content/uploads/2015/10/icon_attack.png");
+			}else if(element == "砲擊type"){
+				typelist.push("http://sb.aaa5207577.net/wp-content/uploads/2015/10/icon_skillattack.png");
+			}else if(element == "防禦type"){
+				typelist.push("http://sb.aaa5207577.net/wp-content/uploads/2015/10/icon_defense.png");
+			}else if(element == "輔助type"){
+				typelist.push("http://sb.aaa5207577.net/wp-content/uploads/2015/10/icon_assist.png");
+			}else if(element == "反擊type"){
+				typelist.push("http://sb.aaa5207577.net/wp-content/uploads/2015/10/icon_counter.png");
+			}
+
+		})
+	}
+
+	let listItems = typelist.map((element,index)=>
+		<div key={index} className="typeimg">
+			<img src={element}/>
+		</div>
+	);
+
+	console.log(listItems);
+
+
+	return(
+		<div>{listItems}</div>
+	)
 }
 
 export default Post

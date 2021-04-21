@@ -5,14 +5,15 @@ export default function handler(req, res) {
   			'Image':'https://i.imgur.com/6bBsDRn.jpg',
   			'Name_tc':'炎龍王',
   			'Name_jp':'炎鳳竜王・レプティアス',
-  			'Atk_before':'',
-  			'Atk_after':'',
-  			'Soul':'',
-  			'Type':'',
-  			'Characteristic_Before':'',
-  			'Characteristic_After':'',
-  			'Tp_Transform':'',
-  			'Tp_Characteristic':''
+  			'hp':'13467',
+  			'Atk_before':'286x3(4)回',
+  			'Atk_after':'345x3(4)回',
+  			'Soul':'4格',
+  			'Type':['攻擊type','強襲type'],
+  			'Characteristic_Before':['飛行','全體化'],
+  			'Characteristic_After':['飛行','全體化','技能盾'],
+  			'Tp_Transform':'25',
+  			'Tp_Characteristic':'弱點賦予'
   		}
   	)
 }
