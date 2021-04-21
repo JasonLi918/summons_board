@@ -101,10 +101,10 @@ class DetailInfo extends React.Component{
 						<tr>
 							<td>Type</td>
 							<td>
-								<TypeList typelist={this.state.data.Type}/>
+								<TypeListImg typelist={this.state.data.Type}/>
 							</td>
 							<td>
-								{this.state.data.Type}
+								<ListText listinfo={this.state.data.Type}/>
 							</td>
 						</tr>
 						<tr>
@@ -114,12 +114,16 @@ class DetailInfo extends React.Component{
 						<tr>
 							<td>特性[覺醒前]</td>
 							<td></td>
-							<td>{this.state.data.Characteristic_Before}</td>
+							<td>
+								<ListText listinfo={this.state.data.Characteristic_Before}/>
+							</td>
 						</tr>
 						<tr>
 							<td>特性[覺醒後]</td>
 							<td></td>
-							<td>{this.state.data.Characteristic_After}</td>
+							<td>
+								<ListText listinfo={this.state.data.Characteristic_After}/>
+							</td>
 						</tr>
 						<tr>
 							<td>覺醒特性</td>
@@ -144,14 +148,6 @@ class DetailInfo extends React.Component{
 					padding:5px;
 				}
 
-				.typeimg{
-					display:inline;
-				}
-
-				.typeimg img{
-					width:90px;
-				}
-
 				`}
 				</style>
 			</div>
@@ -160,7 +156,7 @@ class DetailInfo extends React.Component{
 
 }
 
-function TypeList(props){
+function TypeListImg(props){
 	let typeinfo = (props.typelist);
 	let typelist = [];
 	
@@ -190,16 +186,28 @@ function TypeList(props){
 	}
 
 	let listItems = typelist.map((element,index)=>
-		<div key={index} className="typeimg">
+		<div key={index+"typeimg"} className="typeimg">
 			<img src={element}/>
 		</div>
 	);
 
-	console.log(listItems);
-
-
 	return(
 		<div>{listItems}</div>
+	)
+}
+
+function ListText(props){
+	let listinfo = (props.listinfo);
+	let textlist;
+	
+	if(listinfo != undefined){
+		textlist = listinfo.map((element,index)=>
+			<div key={index+"typetext"} >{element}</div>
+		);
+	}
+
+	return(
+		<div>{textlist}</div>
 	)
 }
 
