@@ -50,15 +50,12 @@ class DetailInfo extends React.Component{
 				<table>
 					<tbody>
 						<tr>
-							<td colSpan="2">Title</td>
-						</tr>
-						<tr>
 							<td>棋寵編號</td>
 							<td>{this.state.data.Number}</td>
 						</tr>
 						<tr>
 							<td colSpan="2">
-								<img src={this.state.data.Image}/>
+								<img src={this.state.data.Image} className="iconimg"/>
 							</td>
 						</tr>
 						<tr>
@@ -136,6 +133,17 @@ class DetailInfo extends React.Component{
 					</tbody>
 				</table>
 
+				<table>
+					<tbody>
+						<tr>
+							<td>棋寵評論</td>
+						</tr>
+						<tr>
+							<td>{this.state.data.Comment}</td>
+						</tr>
+					</tbody>
+				</table>
+
 				<Link href='/'>
 					<a>
 						<button>Back to Home Page</button>
@@ -144,12 +152,17 @@ class DetailInfo extends React.Component{
 				<style jsx>{`
 				table{
 					margin-bottom:20px;
+					width:100%;
 				}
 
 				td{
 					border:1px solid #ffffff;
 					text-align:center;
 					padding:5px;
+				}
+
+				div{
+					margin:2% 25%;
 				}
 
 				`}
@@ -257,6 +270,166 @@ function CharacteristicImg(props){
 					break;
 				case "對空攻擊 Lv1":
 					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/flyingkiller.png");
+					break;
+				case "對空攻擊 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/flyingkiller2.png");
+					break;
+				case "對地攻擊 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/groundkiller.png");
+					break;
+				case "對地攻擊 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/groundkiller2.png");
+					break;
+				case "愛心UP":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/heartup.png");
+					break;
+				case "攻擊吸收 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/kyusyu.png");
+					break;
+				case "攻擊吸收 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/kyusyu2.png");
+					break;
+				case "攻擊吸收 Lv3":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/kyusyu3.png");
+					break;
+				case "防禦性能 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/bougyo1.png");
+					break;
+				case "防禦性能 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/bougyo2.png");
+					break;
+				case "防禦性能 Lv3":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/bougyo3.png");
+					break;
+				case "飛來吸收 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/hirai1.png");
+					break;
+				case "飛來吸收 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/hirai2.png");
+					break;
+				case "飛來吸收 Lv3":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/hirai3.png");
+					break;
+				case "詛咒 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/curse1.png");
+					break;
+				case "詛咒 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/curse2.png");
+					break;
+				case "詛咒 Lv3":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/curse3.png");
+					break;
+				case "迴避性能 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/kaihi1.png");
+					break;
+				case "迴避性能 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/kaihi2.png");
+					break;
+				case "迴避性能 Lv3":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/kaihi3.png");
+					break;
+				case "不意打 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/fuiuchi1.png");
+					break;
+				case "不意打 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/fuiuchi2.png");
+					break;
+				case "不意打 Lv3":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/fuiuchi3.png");
+					break;
+				case "高速移動 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/kousoku1.png");
+					break;
+				case "高速移動 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/kousoku2.png");
+					break;
+				case "高速移動 Lv3":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/kousoku3.png");
+					break;
+				case "陷阱解除 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/trap.png");
+					break;
+				case "陷阱解除 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/trap2.png");
+					break;
+				case "不動 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/knockback.png");
+					break;
+				case "不動 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/knockback2.png");
+					break;
+				case "道具吸收 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/item.png");
+					break;
+				case "道具吸收 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/item2.png");
+					break;
+				case "傷害輕減 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou1.png");
+					break;
+				case "物理傷害輕減 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_physical2.png");
+					break;
+				case "技能傷害輕減 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_skill2.png");
+					break;
+				case "火屬性傷害輕減 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_f1.png");
+					break;
+				case "火屬性傷害輕減 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_f2.png");
+					break;
+				case "火屬性傷害輕減 Lv3":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_f3.png");
+					break;
+				case "水屬性傷害輕減 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_w1.png");
+					break;
+				case "水屬性傷害輕減 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_w2.png");
+					break;
+				case "木屬性傷害輕減 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_t1.png");
+					break;
+				case "木屬性傷害輕減 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_t2.png");
+					break;
+				case "光屬性傷害輕減 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_l1.png");
+					break;
+				case "光屬性傷害輕減 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_l2.png");
+					break;
+				case "暗屬性傷害輕減 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_d1.png");
+					break;
+				case "暗屬性傷害輕減 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_d2.png");
+					break;
+				case "火・木屬性傷害輕減 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_ft2.png");
+					break;
+				case "火・光屬性傷害輕減 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_fl1.png");
+					break;
+				case "火・光屬性傷害輕減 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_fl2.png");
+					break;
+				case "火・暗屬性傷害輕減 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_fd2.png");
+					break;
+				case "水・木屬性傷害輕減 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_wt2.png");
+					break;
+				case "水・暗屬性傷害輕減 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_wd2.png");
+					break;
+				case "光・暗屬性傷害輕減 Lv1":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_ld1.png");
+					break;
+				case "光・暗屬性傷害輕減 Lv2":
+					characteristiclist.push("https://sb.gungho.jp/member/ability/img/icon/mukou_ld2.png");
+					break;
 			}
 		})
 	}
