@@ -475,6 +475,13 @@ export default function handler(req, res) {
         'jp_name':'陰月天将『太裳』綾目',
         'img':'https://imgur.com/8unQEKB.jpg',
         'type':'天將'
+      },
+      {
+        'name':'unknown',
+        'tc_name':'unknown',
+        'jp_name':'unknown',
+        'img':'unknown',
+        'type':'unknown'
       }
   	])
 }

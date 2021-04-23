@@ -45,6 +45,14 @@ class DetailInfo extends React.Component{
 	}
 
 	render(){
+		const atkAfter = this.state.data.Atk_after;
+		let Characteristic;
+		if(atkAfter != ""){
+			Characteristic = {display:''}
+		}else{
+			Characteristic = {display:'none'}
+		}
+
 		return(
 			<div>
 				<table>
@@ -79,10 +87,10 @@ class DetailInfo extends React.Component{
 							<td>{this.state.data.hp}</td>
 						</tr>
 						<tr>
-							<td>攻擊力(覺醒前)</td>
+							<td>攻擊力( 無覺醒 / 覺醒前 )</td>
 							<td>{this.state.data.Atk_before}</td>
 						</tr>
-						<tr>
+						<tr style={Characteristic}>
 							<td>攻擊力(覺醒後)</td>
 							<td>{this.state.data.Atk_after}</td>
 						</tr>
@@ -104,12 +112,12 @@ class DetailInfo extends React.Component{
 								<ListText listinfo={this.state.data.Type}/>
 							</td>
 						</tr>
-						<tr>
+						<tr style={Characteristic}>
 							<td>覺醒玉消耗</td>
 							<td colSpan="2">{this.state.data.Tp_Transform}</td>
 						</tr>
 						<tr>
-							<td>特性[覺醒前]</td>
+							<td>特性[ 無覺醒 / 覺醒前 ]</td>
 							<td>
 								<CharacteristicImg characteristicinfo={this.state.data.Characteristic_Before}/>
 							</td>
@@ -117,7 +125,7 @@ class DetailInfo extends React.Component{
 								<ListText listinfo={this.state.data.Characteristic_Before}/>
 							</td>
 						</tr>
-						<tr>
+						<tr style={Characteristic}>
 							<td>特性[覺醒後]</td>
 							<td>
 								<CharacteristicImg characteristicinfo={this.state.data.Characteristic_After}/>
@@ -126,7 +134,7 @@ class DetailInfo extends React.Component{
 								<ListText listinfo={this.state.data.Characteristic_After}/>
 							</td>
 						</tr>
-						<tr>
+						<tr style={Characteristic}>
 							<td>覺醒特性</td>
 							<td colSpan="2">{this.state.data.Tp_Characteristic}</td>
 						</tr>
