@@ -1,0 +1,20 @@
+export default function handler(req, res) {
+  res.status(200).json(
+  		{
+  			'Number':'1563',
+  			'Image':'https://i.imgur.com/bUIYQbR.jpg',
+  			'Name_tc':'光獸操',
+  			'Name_jp':'光獣操士セリエ',
+  			'hp':'20105',
+  			'Atk_before':'316x3(4)回',
+  			'Atk_after':'',
+  			'Soul':'5格',
+  			'Type':['平衡type'],
+  			'Characteristic_Before':[],
+  			'Characteristic_After':[],
+  			'Tp_Transform':'',
+  			'Tp_Characteristic':'',
+  			'Comment':"光獸操"
+  		}
+  	)
+}

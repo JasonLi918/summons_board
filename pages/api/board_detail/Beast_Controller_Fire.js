@@ -1,0 +1,20 @@
+export default function handler(req, res) {
+  res.status(200).json(
+  		{
+  			'Number':'1332',
+  			'Image':'https://i.imgur.com/y82EZxH.jpg',
+  			'Name_tc':'火獸操',
+  			'Name_jp':'炎獣操士ネス',
+  			'hp':'21544',
+  			'Atk_before':'573x3(4)回',
+  			'Atk_after':'',
+  			'Soul':'5格',
+  			'Type':['攻擊type','砲擊type'],
+  			'Characteristic_Before':['全體化','愛心UP'],
+  			'Characteristic_After':[],
+  			'Tp_Transform':'',
+  			'Tp_Characteristic':'',
+  			'Comment':"火獸操"
+  		}
+  	)
+}
