@@ -1,0 +1,20 @@
+export default function handler(req, res) {
+  res.status(200).json(
+  		{
+  			'Number':'2609',
+  			'Image':'https://imgur.com/7OVk741.jpg',
+  			'Name_tc':'水蝴蝶',
+  			'Name_jp':'蓬鱗羽嬢レテノール',
+  			'hp':'20667',
+  			'Atk_before':'218x3(4)回',
+  			'Atk_after':'',
+  			'Soul':'5格',
+  			'Type':['',''],
+  			'Characteristic_Before':['飛行','全體化'],
+  			'Characteristic_After':['',''],
+  			'Tp_Transform':'',
+  			'Tp_Characteristic':'',
+  			'Comment':"水蝴蝶"
+  		}
+  	)
+}

@@ -1,0 +1,20 @@
+export default function handler(req, res) {
+  res.status(200).json(
+  		{
+  			'Number':'2880',
+  			'Image':'https://imgur.com/VEMFyXA.jpg',
+  			'Name_tc':'木天狗',
+  			'Name_jp':'錫妖天狗ミナギ',
+  			'hp':'39432',
+  			'Atk_before':'20x3(4)回',
+  			'Atk_after':'',
+  			'Soul':'5格',
+  			'Type':['平衡type','防禦type'],
+  			'Characteristic_Before':['飛行','全體化'],
+  			'Characteristic_After':[],
+  			'Tp_Transform':'',
+  			'Tp_Characteristic':'',
+  			'Comment':"木天狗"
+  		}
+  	)
+}
