@@ -147,7 +147,7 @@ class DetailInfo extends React.Component{
 							<td>棋寵評論</td>
 						</tr>
 						<tr>
-							<td>{this.state.data.Comment}</td>
+							<td dangerouslySetInnerHTML={{ __html: this.state.data.Comment }}></td>
 						</tr>
 					</tbody>
 				</table>
