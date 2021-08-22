@@ -14,7 +14,7 @@ export default function handler(req, res) {
   			'Characteristic_After':['貫通 Lv2','技能盾 Lv1','飛來吸收 Lv2'],
   			'Tp_Transform':'40',
   			'Tp_Characteristic':'技能共嗚柱',
-  			'Comment':"火真姬"
+  			'Comment':"火真姬，安安你好"
   		}
   	)
 }
